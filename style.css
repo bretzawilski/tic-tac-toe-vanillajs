@@ -12,3 +12,9 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}

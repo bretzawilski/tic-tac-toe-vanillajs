@@ -15,11 +15,6 @@ const gameBoard = (() => {
 
     start.render();
 
-    // board = [
-    //   '', '', '',
-    //   '', '', '',
-    //   '', '', '',
-    // ];
   });
 
   return { 

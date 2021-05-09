@@ -12,6 +12,9 @@ const gameBoard = (() => {
     for (i = 0; i < play.board.length ; i++) {
       play.board[i] = '';
     }
+    const winDiv = document.getElementById('win-div');
+    winDiv.innerHTML = '';
+
     start.win[0] = false;
     start.turn[0] = true;
     start.render();
@@ -52,6 +55,7 @@ const game = (() => {
 
   const winCondition = ((winner) => {
     const winMessage = document.createElement('h2');
+    winMessage.id = 'win-message';
     winMessage.innerText = `${winner} wins the game!`;
     const winDiv = document.getElementById('win-div');
     winDiv.appendChild(winMessage);
